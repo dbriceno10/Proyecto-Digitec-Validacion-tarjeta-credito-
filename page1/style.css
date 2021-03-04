@@ -10,14 +10,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: cursive;
+    /* font-family: cursive; */
     display: flex;
     flex-direction: column;
     margin-left: 0;
 }
 
 .head-1 {
-    display: grid;
+    /* Header */
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: rgba(196, 155, 95, 0.5);
+    /* display: grid;
     background-color: rgba(226, 198, 145, 0.7);
     grid-template-columns: 100px 300px auto;
     grid-column-gap: 10px;
@@ -26,20 +34,50 @@ body {
     padding-left: 15px;
     margin-left: 0;
     position: fixed;
-    width: 100%;
+    width: 100%; */
     }
 
-.logo {
-    width: 100px;
+.logo-header {
     border-color: black;
-    border: solid 2px;
-    border-radius: 100%;
+    border: solid 1px;
+    position: relative;
+    width: 150px;
+    height: 55.56px;
+    left: 0px;
+    top: 22px;
 }
 
 .etiqueta {
-    font-family: cursive;
-    padding: 0;
-    margin: 0;
+    /* Header text */
+
+
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 170px;
+    top: 18px;
+
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.box-header {
+    /* Busqueda */
+
+
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: 380px;
+    top: 30px;
+    font-family: Oxygen;
+
+    /* Blanco50% */
+
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .box {
