@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitec Tienda Virtual</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style2.css" type="text/css">
+</head>
+<body>
+    <div class="head-1">
+        <img class="logo" src="../img/g1g0IvrH.jpg" alt="digitec-logo">
+        <span class="etiqueta"><h3>Digitec, tu tienda virtual de componentes de electrónica</h3></span>
+        <span><input class="box" type="text" placeholder="Buscar" size="50px"></span>
+    </div>
+    <h2 class="head-2">Sus artículos fueron añadidos al carrito de forma exitosa, por favor llene el siguiente formulario para completar su compra</h2>
+    
+    <div class="div1">
+        <form class="obscuro">
+            <legend>Datos del Usuario</legend>
+            <label for="">Nombre: </label>
+            <input type="text">
+            <label for="">Apellido: </label>
+            <input type="text">
+            <label for="">Correo: </label>
+            <input type="email" autocomplete="email" value="google@gmail.com">
+            <label>Número de Tarjeta: </label>
+            <input type="number" id = "num_tarjeta"/>
+            <label for="">Número de Seguridad</label>
+            <input type="number">
+            <div class="alinear">
+                <input type="button" value="Ingresar" id="ingresar"/>
+                <input type="button" value="Refrescar" onclick="javascript:window.location.reload();"/>
+            </div>
+            </form>
+    </div>
+    <div>
+        <footer class="footer">
+            <button class="box-2" ><a href="validado.html">Volver a Compras</a></button>
+            <img class="vista" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="logo-completo">
+        </footer>
+    </div>
+    <script src = "validator.js"></script>
+    <script src = "funciones_secundarias.js"></script>
+</body>
+</html>
