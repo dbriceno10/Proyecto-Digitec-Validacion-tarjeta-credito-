@@ -10,12 +10,13 @@
 </head>
 <body>
     <!--Cabecera de la página-->
-    
-    <div class="head-1">
-        <img class="logo-header" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="digitec-logo">
-        <span class="etiqueta"><h3>Digitec, tu tienda virtual de componentes de electrónica</h3></span>
-        <nav><input class="box-header" type="text" placeholder="Buscar"></nav>
-    </div>
+    <header>
+        <div class="head-1">
+            <img class="logo-header" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="digitec-logo">
+            <span class="etiqueta"><h3>Digitec, tu tienda virtual de componentes de electrónica</h3></span>
+            <nav><input class="box-header" type="text" placeholder="Buscar"></nav>
+        </div>
+</header>
     <!--Sidebar-->
     <aside class="sidebar">
         <div>
@@ -32,46 +33,67 @@
         </div>
     </aside>
     <!--Contenido de artículos de la página-->
-    <div class="carrito">
-        <p>
-            <img class="vista" src="../img/led1-161.jpg" alt="led-blanco">
-            <span>
-                <br/>
-                <span><a href="#">Led Blanco 5mm 10 unidades 5 USD</a></span>
-            </span>
-            <span><input type="checkbox"></span>
-        </p>
-        <p>
-            <img class="vista" src="../img/leds_0.jpg" alt="cinta-led">
-            <span>
-                <br/>
-                <span><a href="#">Cinta led 10m 25 USD</a></span>
-            </span>
-            <span><input type="checkbox"></span>
-        </p>
-        <p>
-            <img class="vista" src="../img/201610-mo-2016-01-otra-mirada.jpg" alt="leds-varios colores">
-            <span>
-                <br/>
-                <span><a href="#">Leds varios colores 5mm 10 unidades 5 USD</a></span>
-            </span>
-            <span><input type="checkbox"></span>
-        </p>
-        <p>
-            <img class="vista" src="../img/leds-y-resistencias-1-638.jpg" alt="leds-tipo-indicador">
-            <span>
-                <br/>
-                <span><a href="#">Leds tipo indicador varios colores 3mm 10 unidades 6 USD </a></span>
-            </span>
-            <span><input type="checkbox"></span>
-        </p>
-    </div>
+    <section>
+        <div class="contenedor-fondo">
+            <main class="fondo-blanco">
+                <div class="carrito">
+                    <ul>
+                        <li>
+                            <article>
+                                <img class="vista" src="../img/led1-161.jpg" alt="led-blanco">
+                                <span>
+                                    <br/>
+                                    <span class="articulo-1"><a href="#">Led Blanco 5mm 10 unidades</a>
+                                        <span> 5 USD <input type="checkbox"></span>
+                                    </span>
+                                </span>
+                                
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img class="vista" src="../img/leds_0.jpg" alt="cinta-led">
+                                <span>
+                                    <br/>
+                                    <span class="articulo-2"><a href="#">Cinta led 10m</a>
+                                        <span> 25 USD <input type="checkbox"></span>
+                                    </span>
+                                </span>
+                            </article>
+                        </li>
+                        <li>
+                        <article>
+                                <img class="vista" src="../img/201610-mo-2016-01-otra-mirada.jpg" alt="leds-varios colores">
+                                <span>
+                                    <br/>
+                                    <span class="articulo-3"><a href="#">Leds varios colores 5mm 10 unidades</a>
+                                        <span> 5 USD <input type="checkbox"></span>
+                                    </span>
+                                </span>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img class="vista" src="../img/leds-y-resistencias-1-638.jpg" alt="leds-tipo-indicador">
+                                <span>
+                                    <br/>
+                                    <span class="articulo-4"><a href="#">Leds tipo indicador varios colores 3mm 10 unidades</a>
+                                        <span> 6 USD <input type="checkbox"></span>
+                                    </span>
+                                </span>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </section>
     <div>
         <!--Pie de página de la página, botones de referencia-->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <button class="box-2" ><a href="../page2/index2.html">Añadir al Carrito</a></button>
             <img class="vista" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="logo-completo">
         </footer>
-    </div>
+    </div> -->
 </body>
 </html>
