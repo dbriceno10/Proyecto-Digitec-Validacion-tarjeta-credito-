@@ -1,14 +1,7 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
 body {
     width: 100%;
     height: 100%;
-    /* background-color: #eee; */
-    
-    /* font-family: cursive; */
+
     display: flex;
     flex-direction: column;
     margin-left: 0;
@@ -16,37 +9,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* width: 100%;
-    height: 1200px;
-    left: 300px;
-    top: 100px; */
 
 }
 /*Inicio Seccion header y barra de búsqueda*/
 .head-1 {
     /* Header */
-    /* display: flex;
-    flex-direction: row; */
     position: absolute;
     width: 100%;
     height: 100px;
     max-width: 100%;
-    /* background-color: rgb(236, 174, 57); */
-    /* background-color: rgb(224, 172, 75); */
-    /* background-color: rgb(162, 223, 162); */
     background-color: rgba(196, 155, 95);
     opacity: 90%;
-    /* background: rgba(196, 155, 95, 0.5); */
-    /* display: grid;
-    background-color: rgba(226, 198, 145, 0.7);
-    grid-template-columns: 100px 300px auto;
-    grid-column-gap: 10px;
-    justify-items: start;
-    align-items: center;
-    padding-left: 15px;
-    margin-left: 0;
-    position: fixed;
-    width: 100%; */
     }
 
 .logo-header {
@@ -81,7 +54,9 @@ body {
     left: 380px;
     top: 30px;
     font-family: 'Oxygen',Arial, Helvetica, sans-serif;
-    /* background: rgba(255, 255, 255, 0.5); */
+    border: none;
+    border-radius: 4px;
+    
 }
 /*Final de la sección del header*/
 
@@ -100,7 +75,6 @@ body {
     font-family: 'Oxygen',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
-    /* background: rgba(238, 238, 238, 0.5); */
 }
 
 .sidebar div ul {
@@ -132,21 +106,15 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.sidebar div a:hover {
+color: blue;
+text-decoration: underline;
+}
 /*Final de la sección del sidebar*/
 
 /*Inicio de la sección del main*/
-.contenedor-fondo {
-    /* background-image: url(../img/10-102946_circuit-board-wallpaper-abstract-wallpapers-775-data-computer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 1200px;
-    left: 300px;
-    top: 100px;
 
-    mix-blend-mode: normal; */
-}
 .fondo-blanco {
     /* Main */
     position: absolute;
@@ -169,7 +137,6 @@ body {
     width: 200px;
     border: solid 1px black;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
-    /* position: absolute; */
 }
 
 .carrito {
@@ -184,7 +151,6 @@ body {
     padding-left: 50px;;
     font-family: 'Oxygen',Arial, Helvetica, sans-serif;
     font-style: normal;
-    /* font-weight: 300; */
     font-size: 20px;
     line-height: 40px;
     font-weight: bold;
@@ -200,10 +166,15 @@ body {
     color: black;
 }
 
+.carrito ul li article a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
 .articulo-1 {
     /* Led Blanco 5mm 10 unidades */
     position: absolute;
-    width: 290px;
+    width: 280px;
     height: 20px;
     left: 300px;
     top: 40px;
@@ -221,7 +192,7 @@ body {
 .articulo-3 {
     /* Leds varios colores 5mm 10 unidades */
     position: absolute;
-    width: 370px;
+    width: 360px;
     height: 20px;
     left: 300px;
     top: 510px;
@@ -252,8 +223,6 @@ body {
     top: 15px;
     background-color: #39A50D;
     opacity: 100%;
-    /* mix-blend-mode: normal; */
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
     border-radius: 10px;
     border: none;
@@ -271,35 +240,10 @@ body {
     font-weight: bold;
 }
 
-/* .carrito span span {
-    display: inline;
-    background-color:  rgb(17, 155, 173);
-    margin-left: 10px;
-} */
-
-/* .carrito span span:hover {
-    background-color:   rgb(17, 184, 206);
-} */
-
-/* .carrito ul li article img {
-    float: left;
-    position: relative;
-} */
-
-/* .box-2 {
-    background-color: rgb(17, 155, 173);
-    padding: 12px 20px;
-    border-radius: 4px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
-    font-family: cursive;
-    font-size: 20px; 
-    text-decoration: none;
-    border: none;
-} */
-
-.box-2:hover {
-    background-color: rgb(17, 184, 206);
+.boton:hover {
+    background-color: #2f8d0a;
 }
+
 /*Final de la seccion main*/
 
 /*Inicio de la sección del footer*/
@@ -308,12 +252,8 @@ body {
     justify-items: center;
     align-items: end;
     position: relative;
-    /* display: flex;
-    flex-direction: row;
-    position: absolute; */
     width: 100%;
     height: 100px;
-    /* left: 300px; */
     top: 1200px;
 }
 
@@ -340,6 +280,4 @@ body {
     line-height: 20px;
 }
 
-.contenido {
-    margin-left: 150px;
-}
+/*Final de la sección footer*/
