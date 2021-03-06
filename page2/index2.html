@@ -2,45 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitec Tienda Virtual</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style2.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="head-1">
-        <img class="logo" src="../img/g1g0IvrH.jpg" alt="digitec-logo">
-        <span class="etiqueta"><h3>Digitec, tu tienda virtual de componentes de electrónica</h3></span>
-        <span><input class="box" type="text" placeholder="Buscar" size="50px"></span>
-    </div>
-    <h2 class="head-2">Sus artículos fueron añadidos al carrito de forma exitosa, por favor llene el siguiente formulario para completar su compra</h2>
-    
-    <div class="div1">
-        <form class="obscuro">
-            <legend>Datos del Usuario</legend>
-            <label for="">Nombre: </label>
-            <input type="text">
-            <label for="">Apellido: </label>
-            <input type="text">
-            <label for="">Correo: </label>
-            <input type="email" autocomplete="email" value="google@gmail.com">
-            <label>Número de Tarjeta: </label>
-            <input type="number" id = "num_tarjeta"/>
-            <label for="">Número de Seguridad</label>
-            <input type="number">
-            <div class="alinear">
-                <input type="button" value="Ingresar" id="ingresar"/>
-                <input type="button" value="Refrescar" onclick="javascript:window.location.reload();"/>
+    <!--Cabecera de la página-->
+    <header>
+        <div class="head-1">
+            <img class="logo-header" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="digitec-logo">
+            <span class="etiqueta"><h3>Digitec, tu tienda virtual de componentes de electrónica</h3></span>
+            <nav><input class="box-header" type="text" placeholder="Buscar"></nav>
+        </div>
+</header>
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <div>
+            <h1>Artículos</h1>
+            <ul>
+                <li>Tiendas Oficiales</li>
+                <li>Categoría</li>
+                <li>Condición</li>
+                <li>Ubicación</li>
+                <li>Precio</li>
+                <li>Detalles de la pubicación</li>
+            </ul>
+        </div>
+    </aside>
+    <!--Formulario de validación-->
+    <section>
+        <div class="contenedor-fondo">
+            <main class="fondo-blanco">
+                <form class="formulario">
+                    <p>
+                        Los artículos seleccinados se agregaron de forma exitosa, 
+                        por favor, ingrese sus datos para completar su compra.
+                    </p>
+                    <div class="centrar-texto">
+                        <legend>Datos del Comprador</legend>
+                    </div>
+                    <div class="contenedor-casilla">
+                        <label for="">Nombre: </label>
+                        <input type="text" class="casilla" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="contenedor-casilla">
+                        <label for="">Apellido: </label>
+                        <input type="text" class="casilla" placeholder="Ingresa tu apellido" required>
+                    </div>
+                    <div class="contenedor-casilla">
+                        <label for="">Correo: </label>
+                        <input type="email" autocomplete="email" class="casilla" placeholder="Ingresa tu email" required>
+                    </div>
+                    <span class="contenedor-casilla-mini-1">
+                        <p>
+                            <label>Número de Tarjeta: </label>
+                        </p>
+                        <input type="number" id = "num_tarjeta" placeholder="Ingrese" class="casilla" required/>
+                    </span>
+                    <span class="contenedor-casilla-mini-2">
+                        <p>
+                            <label for="">Número de Seguridad</label>
+                        </p>
+                        <input type="number" placeholder="Ingrese" class="casilla" required>
+                    </span>
+                    <div class="contenedor-boton-aceptar">
+                    <input type="submit" class="boton" value="Aceptar" id="ingresar"/>
+                    </form>
+            </main>
+        </div>
+        <section>
+            <div class="contenedor-botones">
+                <input type="button" class="boton" value="Refrescar" onclick="javascript:window.location.reload();"/>
+                <button class="boton"><a href="..//page1/index.html">Regresar</a></button>
             </div>
-            </form>
-    </div>
+        </section>
+    </section>
+    
+    <!--Pie de página de la página, botones de referencia-->
     <div>
         <footer class="footer">
-            <button class="box-2" ><a href="../page1/index.html">Volver a Compras</a></button>
-            <img class="vista" src="../img/49803025_1998152286941125_1674418512451338240_o.jpg" alt="logo-completo">
+            <div>
+                <span class="text-footer">
+                    <p>Hecho por dbriceno10 Copyright 2021. daniel.b100726@gmail.com</p>
+                </span>
+                <span>
+                    <img class="logo-footer" src="../img/g1g0IvrH.jpg" alt="logo-completo">
+                </span>
+            </div>
         </footer>
     </div>
-    <script src = "validator.js"></script>
-    <script src = "funciones_secundarias.js"></script>
+    <!--Archivos de JavaScript-->
+    <script src = "../javascript/validator.js"></script>
+    <script src = "../javascript/funciones_secundarias.js"></script>
 </body>
 </html>
