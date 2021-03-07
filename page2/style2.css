@@ -139,74 +139,6 @@ text-decoration: underline;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
 }
 
-.carrito {
-    display: flex;
-    flex-direction: column;
-    max-width: auto;
-    min-width: 400px;
-    padding-top: 20px;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    padding-left: 50px;;
-    font-family: 'Oxygen',Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: bold;
-    color: black;
-}
-.carrito ul li {
-    list-style: none;
-    padding-bottom: 50px;
-}
-
-.carrito ul li article a {
-    text-decoration: none;
-    color: black;
-}
-
-.carrito ul li article a:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.articulo-1 {
-    /* Led Blanco 5mm 10 unidades */
-    position: absolute;
-    width: 280px;
-    height: 20px;
-    left: 300px;
-    top: 40px;
-}
-
-.articulo-2 {
-    /* Cinta led 10m */
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    left: 300px;
-    top: 300px;
-}
-
-.articulo-3 {
-    /* Leds varios colores 5mm 10 unidades */
-    position: absolute;
-    width: 360px;
-    height: 20px;
-    left: 300px;
-    top: 510px;
-}
-
-    .articulo-4 {
-    /* Led Blanco 5mm 10 unidades */
-    position: absolute;
-    width: 400px;
-    height: 20px;
-    left: 300px;
-    top: 670px;
-}
-
 .contenedor-botones {
     /* Container botones */
     position: absolute;
@@ -281,69 +213,8 @@ text-decoration: underline;
 }
 
 /*Final de la sección footer*/
-/*Residuales*/
-/* input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: cursive;
-}
 
-input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: cursive;
-} */
-
-/* input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: cursive;
-}
-
-input[type=button] {
-    width: 40%;
-    background-color: rgb(17, 155, 173);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: cursive;
-} */
-
-
-.div1 {
-    width: 50%;
-    height: auto;
-    max-width: 600px;
-    min-width: 400px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/800px-RBG-LED.jpg);
-    color: white;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-}
-
+/*Sección del formulario*/
 form {
     font-family: 'Oxygen',Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -363,7 +234,6 @@ form {
     width: auto;
     padding: 12px 20px;
     margin: 8px 0;
-    /* display: inline-block; */
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
@@ -400,9 +270,7 @@ form {
 
 .contenedor-boton-aceptar {
     display: grid;
-    /* flex-direction: column; */
-    width: 100%;
-    /* align-items: center; */
+    width: auto;
     padding-bottom: 50px;
     padding-left: 290px;
 }
