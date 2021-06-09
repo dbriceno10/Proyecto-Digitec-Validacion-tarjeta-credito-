@@ -1,4 +1,4 @@
-import SumArray from "./SumArray"
+import  { SumArray, ReduceArray, LongCardNumber } from "./SumArray.js"
 
 const card_string ="4137894711755904";
 const card_string2 = "4095571174987314";
@@ -25,7 +25,21 @@ const CardValidator = (digit) => {
             arrayAux [i] = arrayCard [i]
         }
     }
-    console.log(arrayAux)
+    const ValidDigit = arrayAux.reduce(ReduceArray, 0)
+    return ValidDigit
 }
 
-CardValidator(card_string)
+const valid1 = CardValidator(card_string)
+console.log(valid1)
+
+const valid2 = CardValidator(card_string2)
+console.log(valid2)
+
+const valid3 = CardValidator(card_string3)
+console.log(valid3)
+
+const valid4 = CardValidator(card_string4)
+console.log(valid4)
+
+const valid5 = CardValidator(card_string5)
+console.log(valid5)
